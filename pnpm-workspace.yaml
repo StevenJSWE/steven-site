@@ -1,2 +1,6 @@
+packages:
+  - . # or your real workspaces if monorepo, e.g. "apps/*", "packages/*"
+
 onlyBuiltDependencies:
   - '@vercel/speed-insights'
+  - '@vercel/analytics'
