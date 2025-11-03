@@ -3,4 +3,3 @@ packages:
 
 onlyBuiltDependencies:
   - '@vercel/speed-insights'
-  - '@vercel/analytics'
