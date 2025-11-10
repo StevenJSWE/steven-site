@@ -5,48 +5,48 @@
 /* shadcn “New York” tokens (v3-friendly) */
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --background: 42 33% 98%;
+    --foreground: 228 30% 12%;
+    --muted: 45 25% 94%;
+    --muted-foreground: 228 15% 40%;
+    --popover: 42 33% 98%;
+    --popover-foreground: 228 30% 12%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --primary: 222.2 47.4% 11.2%;
+    --card-foreground: 228 30% 12%;
+    --border: 42 18% 88%;
+    --input: 42 18% 88%;
+    --primary: 228 35% 30%;
     --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 100% 50%;
-    --destructive-foreground: 210 40% 98%;
-    --ring: 215 20.2% 65.1%;
+    --secondary: 45 20% 92%;
+    --secondary-foreground: 228 30% 15%;
+    --accent: 16 84% 60%;
+    --accent-foreground: 18 100% 98%;
+    --destructive: 0 84% 58%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 228 35% 45%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
-    --ring: 217.2 32.6% 17.5%;
+    --background: 222 16% 10%;
+    --foreground: 42 35% 96%;
+    --muted: 220 14% 18%;
+    --muted-foreground: 40 20% 80%;
+    --popover: 222 16% 10%;
+    --popover-foreground: 42 35% 96%;
+    --card: 222 18% 13%;
+    --card-foreground: 42 35% 96%;
+    --border: 220 14% 24%;
+    --input: 220 14% 24%;
+    --primary: 42 33% 92%;
+    --primary-foreground: 228 30% 15%;
+    --secondary: 220 14% 18%;
+    --secondary-foreground: 42 35% 96%;
+    --accent: 18 67% 55%;
+    --accent-foreground: 18 100% 96%;
+    --destructive: 0 70% 40%;
+    --destructive-foreground: 42 35% 96%;
+    --ring: 18 67% 55%;
   }
 
   * {

@@ -1,24 +1,33 @@
+const placeholders = ['Case Study 01', 'Case Study 02']
+
 export default function ProjectsPage() {
   return (
-    <main className="mx-auto max-w-4xl p-8">
-      <h1 className="mb-4 text-3xl font-semibold">Projects</h1>
+    <main className="mx-auto max-w-4xl space-y-6">
+      <header className="space-y-2">
+        <p className="text-accent text-sm font-semibold uppercase tracking-wide">
+          Work in progress
+        </p>
+        <h1 className="text-3xl font-semibold">Projects</h1>
+        <p className="text-muted-foreground max-w-2xl text-sm sm:text-base">
+          I’m curating case studies that break down the architecture, tooling,
+          and measurable outcomes behind the systems I’ve shipped. Check back
+          soon, or reach out if you’d like a walkthrough.
+        </p>
+      </header>
       <div className="grid gap-6 sm:grid-cols-2">
-        {/* Example project card */}
-        <div className="rounded-lg border p-4">
-          <h2 className="mb-2 text-lg font-semibold">
-            Risk & Trade Monitoring Dashboard
-          </h2>
-          <p className="text-muted-foreground text-sm">
-            React + Spring Boot app for visualizing trade data and anomalies.
-          </p>
-        </div>
-        <div className="rounded-lg border p-4">
-          <h2 className="mb-2 text-lg font-semibold">PKCE Research App</h2>
-          <p className="text-muted-foreground text-sm">
-            Analysis of Proof Key for Code Exchange vulnerabilities with React
-            front-end.
-          </p>
-        </div>
+        {placeholders.map((label) => (
+          <article
+            key={label}
+            className="rounded-2xl border border-dashed bg-muted/30 p-6 text-center"
+          >
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+              {label}
+            </h2>
+            <p className="text-muted-foreground mt-3 text-sm">
+              Reserved for a future deep dive.
+            </p>
+          </article>
+        ))}
       </div>
     </main>
   )

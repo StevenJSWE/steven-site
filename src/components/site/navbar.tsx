@@ -33,7 +33,6 @@ export function Navbar() {
                     {label}
                   </Link>
                 </NavigationMenuLink>
-                ``````
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
