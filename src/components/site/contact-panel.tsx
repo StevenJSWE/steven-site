@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { Github, Linkedin, Mail, Twitter } from 'lucide-react'
 
 const links = [
   {
@@ -15,6 +15,11 @@ const links = [
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/steven-j-baird-b226aa290',
     Icon: Linkedin,
+  },
+  {
+    label: 'Twitter',
+    href: 'https://x.com/SJBairdSWE',
+    Icon: Twitter,
   },
 ]
 

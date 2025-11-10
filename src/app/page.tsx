@@ -42,11 +42,11 @@ export default function HomePage() {
               Software Engineer
             </p>
             <h1 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">
-              Hi, I’m Steven — I like programming and making things.
+              Hi, I’m Steven
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-              I work in Corporate Technology within Data Core Engineering on the
-              Corporate Data Premiere data management platform.
+              I work within Corporate Technology at JPMorgan Chase and spend
+              most of my time working on Big Data Platforms.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
