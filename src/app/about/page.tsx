@@ -20,7 +20,7 @@ const updates = [
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto max-w-3xl space-y-10 p-8">
+    <main className="space-y-10 py-6">
       <section className="space-y-4">
         <h1 className="text-3xl font-semibold">About Me</h1>
         <p className="text-base leading-relaxed text-muted-foreground">

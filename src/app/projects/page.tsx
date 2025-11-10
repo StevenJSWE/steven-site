@@ -1,14 +1,14 @@
-const placeholders = ['Case Study 01', 'Case Study 02']
+const placeholders = ['Project 01', 'Project 02']
 
 export default function ProjectsPage() {
   return (
-    <main className="mx-auto max-w-4xl space-y-6">
+    <main className="space-y-8 py-6">
       <header className="space-y-2">
         <p className="text-accent text-sm font-semibold uppercase tracking-wide">
           Work in progress
         </p>
         <h1 className="text-3xl font-semibold">Projects</h1>
-        <p className="text-muted-foreground max-w-2xl text-sm sm:text-base">
+        <p className="text-muted-foreground text-sm sm:text-base">
           I’m curating case studies that break down the architecture, tooling,
           and measurable outcomes behind the systems I’ve shipped. Check back
           soon, or reach out if you’d like a walkthrough.

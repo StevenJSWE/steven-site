@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Navbar } from '@/components/site/navbar'
+import { ContactPanel } from '@/components/site/contact-panel'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/react'
 
@@ -20,7 +21,10 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
-          <main className="container mx-auto px-4 py-8">{children}</main>
+          <div className="container mx-auto space-y-12 px-4 py-8">
+            {children}
+            <ContactPanel />
+          </div>
         </ThemeProvider>
         <SpeedInsights />
         <Analytics />

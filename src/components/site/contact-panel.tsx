@@ -18,20 +18,25 @@ const links = [
   },
 ]
 
-export default function ContactPage() {
+export function ContactPanel() {
   return (
-    <main className="mx-auto max-w-xl p-8">
-      <h1 className="mb-4 text-3xl font-semibold">Get in touch</h1>
-      <p className="mb-6 text-muted-foreground">
-        Feel free to reach out about opportunities, collaborations, or just to
-        say hi.
+    <section
+      id="contact"
+      className="rounded-3xl border bg-card/70 p-6 shadow-sm shadow-primary/5"
+    >
+      <p className="text-xs font-semibold uppercase tracking-wide text-accent">
+        Stay in touch
       </p>
-      <ul className="space-y-3">
+      <p className="mt-3 text-sm text-muted-foreground">
+        I’m always happy to chat about backend systems, data platforms, or new
+        opportunities. Reach out through whichever channel works best.
+      </p>
+      <ul className="mt-6 space-y-3">
         {links.map(({ label, href, Icon }) => (
           <li key={label}>
             <a
               href={href}
-              className="hover:text-primary flex items-center gap-3 underline decoration-transparent transition hover:decoration-current"
+              className="flex items-center gap-3 rounded-full px-3 py-2 text-sm font-medium transition hover:text-primary"
             >
               <Icon className="h-5 w-5" />
               <span>{label}</span>
@@ -39,6 +44,6 @@ export default function ContactPage() {
           </li>
         ))}
       </ul>
-    </main>
+    </section>
   )
 }
