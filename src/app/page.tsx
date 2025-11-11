@@ -28,18 +28,8 @@ export default function HomePage() {
   return (
     <main className="space-y-12 py-6">
       <section className="rounded-3xl border bg-card/60 p-6 shadow-lg shadow-primary/5 sm:p-8">
-        <div className="grid gap-8 lg:grid-cols-[280px_minmax(0,1fr)]">
-          <div className="relative min-h-[240px] overflow-hidden rounded-2xl border border-dashed border-border/70 bg-muted/40">
-            <Image
-              src="/7524D48D-7194-4F22-9CFD-7B2F3D66C8BD.jpeg"
-              alt="Steven Baird portrait"
-              fill
-              sizes="(max-width: 1024px) 100vw, 280px"
-              className="object-cover object-center"
-              priority
-            />
-          </div>
-          <div>
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_240px] lg:items-center">
+          <div className="lg:order-1">
             <p className="text-sm font-medium uppercase tracking-wide text-accent">
               Software Engineer
             </p>
@@ -79,6 +69,18 @@ export default function HomePage() {
                 </div>
               ))}
             </dl>
+          </div>
+          <div className="order-first flex justify-center lg:order-2 lg:justify-end">
+            <div className="relative h-32 w-32 overflow-hidden rounded-[2rem] border border-dashed border-border/70 bg-muted/40 shadow-sm shadow-primary/10 sm:h-40 sm:w-40 lg:h-56 lg:w-56">
+              <Image
+                src="/7524D48D-7194-4F22-9CFD-7B2F3D66C8BD.jpeg"
+                alt="Steven Baird portrait"
+                fill
+                sizes="(max-width: 640px) 8rem, (max-width: 1024px) 10rem, 12rem"
+                className="object-cover object-center"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
