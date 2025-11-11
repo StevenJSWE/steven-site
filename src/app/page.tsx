@@ -28,50 +28,19 @@ export default function HomePage() {
   return (
     <main className="space-y-12 py-6">
       <section className="rounded-3xl border bg-card/60 p-6 shadow-lg shadow-primary/5 sm:p-8">
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_240px] lg:items-center">
-          <div className="lg:order-1">
-            <p className="text-sm font-medium uppercase tracking-wide text-accent">
-              Software Engineer
-            </p>
-            <h1 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">
-              Hi, I’m Steven
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-              I work within Corporate Technology at JPMorgan Chase and spend
-              most of my time working on Big Data Platforms.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Link
-                href="/projects"
-                className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition hover:bg-primary/90"
-              >
-                View projects
-              </Link>
-              <Link
-                href="#contact"
-                className="rounded-full border border-transparent bg-accent px-5 py-2 text-sm font-medium text-accent-foreground transition hover:bg-accent/90"
-              >
-                Get in touch
-              </Link>
-            </div>
-            <dl className="mt-8 grid gap-4 text-muted-foreground sm:grid-cols-3">
-              {highlights.map((item) => (
-                <div
-                  key={item.label}
-                  className="rounded-2xl border border-dashed px-4 py-3"
-                >
-                  <dt className="text-xs uppercase tracking-wide">
-                    {item.label}
-                  </dt>
-                  <dd className="text-lg font-semibold text-foreground">
-                    {item.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-          <div className="order-first flex justify-center lg:order-2 lg:justify-end">
-            <div className="relative h-32 w-32 overflow-hidden rounded-[2rem] border border-dashed border-border/70 bg-muted/40 shadow-sm shadow-primary/10 sm:h-40 sm:w-40 lg:h-56 lg:w-56">
+        <div className="space-y-6">
+          <p className="text-sm font-medium uppercase tracking-wide text-accent">
+            Software Engineer
+          </p>
+          <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">
+            Hi, I’m Steven
+          </h1>
+          <p className="text-lg text-muted-foreground">
+            I work within Corporate Technology at JPMorgan Chase and spend most
+            of my time working on Big Data Platforms.
+          </p>
+          <div className="flex justify-center sm:justify-start">
+            <div className="relative h-32 w-32 overflow-hidden rounded-[1.75rem] border border-dashed border-border/70 bg-muted/40 shadow-sm shadow-primary/10 sm:h-40 sm:w-40 lg:h-48 lg:w-48">
               <Image
                 src="/7524D48D-7194-4F22-9CFD-7B2F3D66C8BD.jpeg"
                 alt="Steven Baird portrait"
@@ -82,6 +51,35 @@ export default function HomePage() {
               />
             </div>
           </div>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/projects"
+              className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition hover:bg-primary/90"
+            >
+              View projects
+            </Link>
+            <Link
+              href="#contact"
+              className="rounded-full border border-transparent bg-accent px-5 py-2 text-sm font-medium text-accent-foreground transition hover:bg-accent/90"
+            >
+              Get in touch
+            </Link>
+          </div>
+          <dl className="grid gap-4 text-muted-foreground sm:grid-cols-3">
+            {highlights.map((item) => (
+              <div
+                key={item.label}
+                className="rounded-2xl border border-dashed px-4 py-3"
+              >
+                <dt className="text-xs uppercase tracking-wide">
+                  {item.label}
+                </dt>
+                <dd className="text-lg font-semibold text-foreground">
+                  {item.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
