@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 const highlights = [
@@ -28,14 +29,15 @@ export default function HomePage() {
     <main className="space-y-12 py-6">
       <section className="rounded-3xl border bg-card/60 p-6 shadow-lg shadow-primary/5 sm:p-8">
         <div className="grid gap-8 lg:grid-cols-[280px_minmax(0,1fr)]">
-          <div
-            aria-hidden
-            className="rounded-2xl border border-dashed border-border/70 bg-muted/40 text-muted-foreground/80"
-          >
-            <div className="flex h-full min-h-[240px] flex-col items-center justify-center gap-2 text-center">
-              <span className="text-sm font-medium">Portrait placeholder</span>
-              <span className="text-xs">Swap in your photo or icon later</span>
-            </div>
+          <div className="relative min-h-[240px] overflow-hidden rounded-2xl border border-dashed border-border/70 bg-muted/40">
+            <Image
+              src="/7524D48D-7194-4F22-9CFD-7B2F3D66C8BD.jpeg"
+              alt="Steven Baird portrait"
+              fill
+              sizes="(max-width: 1024px) 100vw, 280px"
+              className="object-cover object-center"
+              priority
+            />
           </div>
           <div>
             <p className="text-sm font-medium uppercase tracking-wide text-accent">
